@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 20;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%; 
+    background: linear-gradient(to right, #50e475, #97f3bc);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: inherit;
+    align-items: center;
+    justify-content: center;
+    padding: 34px;
+    position: relative;
+    top: 50;
+    right: 10px;
+    font-size: 20px;
+}
+
+.cabecalho-menu {
+    font-size: 16px;
+
+}
+
+.cabecalho-imagem {
+    height: 190px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.cabecalho-menu-item {
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+}
+
+.conteudo-secundario-imagem {
+    height: 320px;
+    position: relative;
+    top: 1600px;
+    right: -1500px;
+}
+
+.conteudo-secundario-imagem4 {
+    height: 500px;
+    position: relative;
+    top: 400px;
+    right: -600px;
+}
+
+.conteudo-secundario {
+    margin-top: -250px
+}
+
+.conteudo-secundario-titulo {
+    font-size: 30px;
+}
+
+.conteudo-secundario-paragrafo {
+    font-size: 20px;
+}
+
