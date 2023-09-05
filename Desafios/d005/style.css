@@ -1,3 +1,7 @@
 body {
-    background-color: #b9fafa; /* Substitua pela cor desejada em formato hexadecimal ou nome da cor */
+    background-color: #acfaf3;
   }
+
+.formatacao {
+  background-color: rgb(11, 32, 100);
+}
