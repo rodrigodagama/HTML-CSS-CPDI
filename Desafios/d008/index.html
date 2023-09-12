@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Flexíveis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-image: url('imagens/background.png'); 
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        #conteudo {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 500px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="conteudo">
+        <h1>Imagens Flexíveis</h1>  
+        <p>Aumente e diminua o tamanho do seu navegador e veja como as imagens de comportam.</p>
+    </div>
+        
+    <picture>
+        <source media="(max-width: 750px)"
+        srcset="imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)"
+        srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" type="image/flexível">
+    </picture>
+</body>
+</html>
