@@ -20,20 +20,23 @@ body {
 }
 
 .left-column {
-    width: 30%; /* Largura da coluna esquerda */
-    background-color: #007acc; /* Cor do background da coluna esquerda */
+    width: 30%; 
+    background-image: url(imagens/background1.png); 
+    background-size: cover;
     padding: 20px;
 }
 
 .left-column img {
     width: 100%;
     border-radius: 50%;
-    border: 2px solid #ffffff; /* Cor da borda da foto */
+    border: 2px solid #ffffff; /
 }
 
 .right-column {
-    width: 70%; /* Largura da coluna direita */
-    padding: 20px;
+    background-image: url(imagens/background3.png); 
+    opacity: 0.9;
+    width: 70%; 
+    padding: 10px;
 }
 
 h1 {
