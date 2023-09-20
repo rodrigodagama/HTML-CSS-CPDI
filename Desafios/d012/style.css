@@ -39,7 +39,22 @@ body {
 }
 
 h1 {
+    font-family: 'Codystar', cursive;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'Kenia', cursive;
+    font-family: 'Red Rose', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
+    margin-top: 10px;
+}
+
+.name {
+    font-family: 'Codystar', cursive;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'Kenia', cursive;
+    font-family: 'Red Rose', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-size: 44px;
     margin-top: 10px;
 }
 
