@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Links</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none; /* remove o sublinhado do link*/
+            font-family: bold; /* negrito */
+        }
+        a:visited {
+            color: darkmagenta;
+        }
+        
+        a#aula:visited { /* endereço ja visitado */
+            color:green ;
+        }
+        a:hover { /* ao passar o mouse */
+            color: black;
+            text-decoration: underline;
+        }
+        a:active { /* ao clicar */
+            color: yellow;
+        }
+        a::after {
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seletores personalizados</h1>
+    <p> # id
+        . class <br>
+        : pseudo-class <br>
+        :: pseudo-element <br>
+        > children 
+    </p>
+
+    <h1>Personalizados links</h1>
+    <ul>
+        <li> <a href="https://www.linkedin.com/in/rodrigodagama/">Perfil do linkedin</a></li>
+        <li> <a href="https://drive.google.com/drive/folders/1rk8Pxdo-z5LKk0Ny3mgkq6LiGWRvN38Z">Drive da turma</a></li>
+        <li> <a id="aula" href="https://youtu.be/3nQWTZhmPgM">Link da ultima aula</a></li>
+    </ul>
+</body>
+</html>
