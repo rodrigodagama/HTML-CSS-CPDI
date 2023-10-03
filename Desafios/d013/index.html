@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpongeBob SquarePants</title>
+
+    <style>
+
+        body {
+            background-image: radial-gradient(circle at 50% -20.71%, #0085E0 0, #064066 25%, #4EA9E5 50%, #003A61 75%, #006BB3 100%);
+            background-attachment: fixed ;
+        }   
+
+        .titulo {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 20px;
+        margin: 0 auto; 
+        max-width: 30%;
+        text-align: center;
+        font-size: larger;
+        font-weight: bold;
+        font-family: "Arial", sans-serif;
+        }      
+
+        #conteudo {
+        background-color: rgba(255, 255, 255, 0.8);
+        background-image: url(imagens/cenario.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding: 30px;
+        border-radius: 20px;
+        margin: 20px 20px ; 
+        max-width: 200px;
+        text-align: center;
+        height: 320px;
+        max-width: 90%;
+        font-size: larger; 
+        font-weight: bold;
+        font-family: "Arial", sans-serif;
+        }
+
+        .personagem1:after {
+        content: "";
+        background-image: url(imagens/bob.png);
+        background-size: 100px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 240px;
+        left: 450px;
+        right: 0;
+        bottom: 0;
+        border-radius: 20px;
+        }
+
+        .personagem2:after {
+        content: "";
+        background-image: url(imagens/patrick1.png); /* Imagem do Patrick */
+        background-size: 110px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 210px;
+        left: 0px;
+        right: 0;
+        bottom: 0;
+        border-radius: 20px;
+        }
+
+        .personagem3:after {
+        content: "";
+        background-image: url(imagens/Siriguejo.png); /* Imagem do Patrick */
+        background-size: 100px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 180px;
+        left: -400px;
+        right: 0;
+        bottom: 0;
+        border-radius: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 class="titulo">SpongeBob SquarePants</h1>
+    <div id="conteudo"></div>
+    <div class="personagem1"></div>
+    <div class="personagem2"></div>
+    <div class="personagem3"></div>
+</body>
+</html>
