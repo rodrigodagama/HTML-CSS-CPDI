@@ -15,23 +15,26 @@ body {
     height: 100vh; /* Define a altura para ocupar toda a altura da tela */
 }
 
-
-.right-column {
-    width: 40%; /* Define a largura das colunas */
-    background-image: url(imagens/background-left-right.png); 
+.left-column {
+    width: 400px; 
+    height: 1450px; 
+    margin-top: auto;
+    background-image: url(imagens/background-left-right.png);
+    background-repeat: no-repeat;
     text-shadow: 1px -1px 0 #d8d5d5;
-    background-size: cover;
+    background-size: 100% 100%;
     padding: 10px;
     border: 3px solid white;
 }
 
-.left-column {
-    width: 30%; /* Define a largura das colunas */
-    margin-top: 310px;
-    background-image: url(imagens/background-left-right.png); 
+.right-column {
+    width: 650px; 
+    height: 1450px; 
+    margin-top: auto;
+    background-image: url(imagens/background-left-right.png);
     background-repeat: no-repeat;
     text-shadow: 1px -1px 0 #d8d5d5;
-    background-size: cover;
+    background-size: 100% 100%;
     padding: 10px;
     border: 3px solid white;
 }
