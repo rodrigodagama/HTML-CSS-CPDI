@@ -1,23 +1,21 @@
 @charset "UTF-8";
 
 body {
-    background-image: url(imagens/background8.png); 
+    background-image: url(imagens/background111.png); 
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    
+    background-size: 100% 100%;  
 }
 
 .portfolio {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100vh; /* Define a altura para ocupar toda a altura da tela */
+    justify-content: center; 
+    height: 100vh; 
 }
 
 .left-column {
     width: 400px; 
-    height: 1450px; 
+    height: 1280px; 
     margin-top: auto;
     background-image: url(imagens/background-left-right.png);
     background-repeat: no-repeat;
@@ -29,7 +27,7 @@ body {
 
 .right-column {
     width: 650px; 
-    height: 1450px; 
+    height: 1280px; 
     margin-top: auto;
     background-image: url(imagens/background-left-right.png);
     background-repeat: no-repeat;
@@ -65,6 +63,7 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 44px;
     margin-top: 10px;
+    text-align: center;
 }
 
 h2 {
