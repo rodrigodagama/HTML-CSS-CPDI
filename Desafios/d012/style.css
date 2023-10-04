@@ -17,9 +17,9 @@ body {
     width: 400px; 
     height: 1280px; 
     margin-top: auto;
-    background-image: url(imagens/background-left-right2.jpg);
+    background-image: url(imagens/background-projeto-final2.png);
     background-repeat: no-repeat;
-
+    color: black;
     background-size: 100% 100%;
     padding: 10px;
     border: 3px solid white;
@@ -29,9 +29,9 @@ body {
     width: 650px; 
     height: 1280px; 
     margin-top: auto;
-    background-image: url(imagens/background-left-right2.jpg);
+    background-image: url(imagens/background-projeto-final2.png);
     background-repeat: no-repeat;
-    
+    color: black;
     background-size: 100% 100%;
     padding: 10px;
     border: 3px solid white;
@@ -83,4 +83,13 @@ p {
     font-style: oblique;
     font-size: 16px;
     margin: 5px 0;
+}
+
+.tabela {
+    background-image: url(imagens/background-left-right.png);
+    background-color: antiquewhite;
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    padding: 2%;
+    margin-left: 20px;
 }
