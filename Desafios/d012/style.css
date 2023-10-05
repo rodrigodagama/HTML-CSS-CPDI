@@ -15,7 +15,7 @@ body {
 
 .left-column {
     width: 400px; 
-    height: 1280px; 
+    height: 1380px;
     margin-top: auto;
     background-image: url(imagens/background-projeto-final2.png);
     background-repeat: no-repeat;
@@ -27,7 +27,7 @@ body {
 
 .right-column {
     width: 650px; 
-    height: 1280px; 
+    height: 1380px; 
     margin-top: auto;
     background-image: url(imagens/background-projeto-final2.png);
     background-repeat: no-repeat;
@@ -92,6 +92,16 @@ p {
     border: 2px solid #ffffff;
     padding: 2%;
     margin-left: 20px;
+}
+
+.tabela-titulo {
+    text-align: center;
+    padding-right: 60px;
+}
+
+
+table td {
+    padding-left: 20px;
 }
 
 
