@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Star Explorer</title>
+
+    <style>
+        body {
+            background-image: url(imagens/background114.png);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .titulo {
+            background-image: url(imagens/background-left-right.png);
+            padding: 20px;
+            border-radius: 20px;
+            margin: 0 auto;
+            max-width: 40%;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        #conteudo {
+            background-image: url(imagens/background-left-right.png);
+            background-repeat: no-repeat;
+            background-size: 280%;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 20px 20px;
+            max-width: 90%;
+            font-size: larger;
+            font-weight: bold;
+            font-family: "Arial", sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        .personagens {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;            
+        }
+
+        .personagem {
+            background-color: rgb(27, 172, 100, 0.6);
+            padding: 30px;
+            border-radius: 20px;
+            max-width: calc(16.66% - 20px);
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+            font-family: "Arial", sans-serif;
+            margin-bottom: 20px;
+            cursor: pointer;
+            border: 2px solid #ffffff;
+        }
+
+        .personagem img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ffffff;
+        }
+
+        .texto {
+            background-color: rgb(27, 172, 100, 0.6);
+            color: rgb(0, 0, 0);
+            padding: 30px;
+            margin: 10px;
+            border-radius: 20px;
+            max-width: calc(66.66% - 20px);
+            text-align:justify;
+            font-size: 16px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+            text-align: center;
+        }
+
+        .lightbox img {
+            max-height: 80%;
+            max-width: 80%;
+            margin: auto;
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+        }
+
+        .video {
+            background-color: rgba(27, 172, 100, 0.6);
+            padding: 20px;
+            border-radius: 20px;
+            max-width: 880px;
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+            font-family: "Arial", sans-serif;
+            margin-bottom: 20px;
+            cursor: pointer;
+            border: 2px solid #ffffff;
+        }
+
+        .close {
+            background-color: white;
+            padding: 10px;
+            border-radius: 20px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            color: red;
+            font-size: 24px;
+            font-weight: bold; 
+            position: center; 
+            cursor: pointer;
+            border: 2px solid #ffffff;
+        }
+
+        .voltar {
+            background-image: url(imagens/background-left-right.png);
+            padding: 20px;
+            border-radius: 20px;
+            margin: 0 auto;
+            max-width: 30%;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Jogo Star Explorer</h1>
+    <div id="conteudo">
+        <div class="personagens">
+            <div class="personagem" onclick="openLightbox('imagens/StarExplorer/foto1.JPG')">
+                <img src="imagens/StarExplorer/foto1.JPG" alt="Menu">
+            </div>
+            <div class="personagem" onclick="openLightbox('imagens/StarExplorer/foto2.JPG')">
+                <img src="imagens/StarExplorer/foto2.JPG" alt="Jogo">
+            </div>
+            <div class="personagem" onclick="openLightbox('imagens/StarExplorer/foto3.JPG')">
+                <img src="imagens/StarExplorer/foto3.JPG" alt="Recordes">
+            </div> 
+        </div>
+        <div class="video">
+            <iframe width="860" height="615" src="video/starExplorer.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="texto">
+            <p>
+                <p><h2>Jogo Star Explorer:</h2></p>
+        
+                <p>O jogo é um clássico de tiro espacial onde o jogador assume o controle de uma nave espacial. O objetivo principal do jogo é destruir asteroides que se movem pela tela e acumular pontos. No entanto, o jogador também deve evitar que a nave colida com esses asteroides, pois cada colisão resulta na perda de uma vida. O jogo continua até que o jogador fique sem vidas, momento em que a pontuação final é registrada e o jogo termina.</p>
+                
+                <p>Aqui estão os principais elementos do jogo:</p> 
+                            
+                <p><span style="font-size: 17px; text-decoration: underline;">Nave Espacial:</span> O jogador controla uma nave espacial que pode ser movida pela tela tocando e arrastando.</p>
+                            
+                <p><span style="font-size: 17px; text-decoration: underline;">Asteroides:</span> Asteroides são os inimigos do jogo. Eles aparecem em posições aleatórias na tela e se movem em direções aleatórias. O jogador deve atirar nos asteroides para destruí-los e ganhar pontos.</p>
+                            
+                <p><span style="font-size: 17px; text-decoration: underline;">Tiros de Laser:</span> O jogador pode atirar tiros de laser tocando na tela. Os tiros de laser sobem na tela e destroem os asteroides com os quais colidem.</p>
+                            
+                <p><span style="font-size: 17px; text-decoration: underline;">Vidas e Pontuação:</span> O jogador começa com um número específico de vidas (geralmente três) e acumula pontos ao destruir asteroides. Cada colisão com um asteroide resulta na perda de uma vida. O objetivo é obter a maior pontuação possível antes de ficar sem vidas.</p>
+                            
+                <p><span style="font-size: 17px; text-decoration: underline;">Explosões e Sons:</span> O jogo inclui efeitos sonoros, como explosões quando um asteroide é destruído ou quando a nave colide com um asteroide.</p>
+                            
+                <p><span style="font-size: 17px; text-decoration: underline;">Fundo Musical:</span> Uma música de fundo contribui para a atmosfera do jogo.</p>
+
+                <p><span style="font-size: 17px; text-decoration: underline;">Final do Jogo:</span> O jogo continua até que o jogador fique sem vidas. Nesse ponto, a pontuação final é exibida e, possivelmente, registrada em um sistema de recordes.</p>
+                    
+                <p>O desafio do jogo está em equilibrar a precisão ao atirar nos asteroides com a habilidade de evitar colisões. À medida que o jogo avança, a velocidade e o número de asteroides aumentam, tornando-o mais desafiador.</p>
+
+                <p>Em resumo, este é um jogo de ação simples e envolvente que testa os reflexos e a coordenação do jogador, desafiando-os a destruir asteroides e acumular pontos enquanto evitam colisões.</p>
+            </p>
+        </div>
+
+    </div>
+
+    <h2 class="voltar"><a href="https://rodrigodagama.github.io/HTML-CSS-CPDI/Desafios/d012/">Voltar</a></h2>
+
+    <div class="lightbox" id="lightbox">
+        <img id="lightbox-image" src="" alt="Imagem Ampliada">
+        <span onclick="closeLightbox()" class="close">FECHAR</span>
+    </div>
+
+    <script>
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImage = document.getElementById("lightbox-image");
+            lightboxImage.src = imageSrc;
+            lightbox.style.display = "block";
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById("lightbox");
+            lightbox.style.display = "none";
+        }
+    </script>
+</body>
+</html>
