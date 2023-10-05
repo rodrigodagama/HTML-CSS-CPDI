@@ -93,3 +93,9 @@ p {
     padding: 2%;
     margin-left: 20px;
 }
+
+
+a:visited {
+    color: rgb(0, 0, 0); /* Define a cor do texto do link visitado como branco */
+}
+
