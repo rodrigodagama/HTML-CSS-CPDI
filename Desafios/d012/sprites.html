@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprites</title>
+
+    <style>
+        body {
+            background-image: url(imagens/background114.png);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .titulo {
+            background-image: url(imagens/background-left-right.png);
+            padding: 20px;
+            border-radius: 20px;
+            margin: 0 auto;
+            max-width: 40%;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        #conteudo {
+            background-image: url(imagens/background-left-right.png);
+            background-repeat: no-repeat;
+            background-size: 280%;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 20px 20px;
+            max-width: 90%;
+            font-size: larger;
+            font-weight: bold;
+            font-family: "Arial", sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        .personagens {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;            
+        }
+
+        .personagem {
+            background-color: rgb(27, 172, 100, 0.6);
+            padding: 30px;
+            border-radius: 20px;
+            max-width: calc(16.66% - 20px);
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+            font-family: "Arial", sans-serif;
+            margin-bottom: 20px;
+            cursor: pointer;
+            border: 2px solid #ffffff;
+        }
+
+        .personagem img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ffffff;
+        }
+
+        .texto {
+            background-color: rgb(27, 172, 100, 0.6);
+            color: rgb(0, 0, 0);
+            padding: 30px;
+            margin: 10px;
+            border-radius: 20px;
+            max-width: calc(66.66% - 20px);
+            text-align:justify;
+            font-size: 16px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+            text-align: center;
+        }
+
+        .lightbox img {
+            max-height: 80%;
+            max-width: 80%;
+            margin: auto;
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+        }
+
+        .video {
+            background-color: rgba(27, 172, 100, 0.6);
+            padding: 20px;
+            border-radius: 20px;
+            max-width: auto;
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+            font-family: "Arial", sans-serif;
+            margin-bottom: 20px;
+            cursor: pointer;
+            border: 2px solid #ffffff;
+        }
+
+        .close {
+            background-color: white;
+            padding: 10px;
+            border-radius: 20px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            color: red;
+            font-size: 24px;
+            font-weight: bold; 
+            position: center; 
+            cursor: pointer;
+            border: 2px solid #ffffff;
+        }
+
+        .voltar {
+            background-image: url(imagens/background-left-right.png);
+            padding: 20px;
+            border-radius: 20px;
+            margin: 0 auto;
+            max-width: 30%;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        .github {
+            background-image: url(imagens/background-left-right.png);
+            padding: 10px;
+            border-radius: 20px;
+            margin-left: 140px;
+            margin-top: 70px;
+            max-width: 70%;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        a:visited {
+        color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Sprites</h1>
+    <div id="conteudo">
+        <div class="personagens">
+            <div class="personagem" onclick="openLightbox('imagens/Sprites/Moon.JPG')">
+                <img src="imagens/Sprites/Moon.JPG" alt="Moon">
+            </div>
+            <div class="personagem" onclick="openLightbox('imagens/Sprites/Jungle.JPG')">
+                <img src="imagens/Sprites/Jungle.JPG" alt="Jungle">
+            </div>
+            <div class="personagem" onclick="openLightbox('imagens/projetofinal-lua/fase2.JPG')">
+                <img src="imagens/Sprites/RPG.JPG" alt="RPG">
+            </div>            
+        </div>
+        <div class="video">
+            <iframe width="760" height="515" src="video/sprites/moon.mp4" frameborder="0" allowfullscreen></iframe>; <iframe width="760" height="515" src="video/sprites/jungle.mp4" frameborder="0" allowfullscreen></iframe>; <iframe width="860" height="615" src="video/sprites/rpg.mp4" frameborder="0" allowfullscreen></iframe>        
+            
+        </div>
+        <div class="texto">
+            <p>
+                <p><h2>Sprites</h2></p>
+        
+                <p>Exercícios e desafios feitos para a aula de Sprites em LUA que é parte de um jogo de plataforma 2D que envolve uma nave espacial controlável, animações de personagens, e interações de toque na tela para mover o personagem.</p>
+                
+                <p><span style="font-size: 17px; text-decoration: underline;">Criação do Plano de Fundo:</span></p>
+
+                <p>É criado um plano de fundo da cena usando a função display.newImageRect(). O plano de fundo é uma imagem chamada "bg.png" que é dimensionada para ajustar a tela.</p>
+                <p>A posição do plano de fundo é definida para o centro horizontal (display.contentCenterX) e uma posição vertical específica (135).</p> 
+                           
+                <p><span style="font-size: 17px; text-decoration: underline;">Configuração da Barra de Status:</span></p> 
+                <p>A barra de status do dispositivo é ocultada usando display.setStatusBar(display.HiddenStatusBar) para proporcionar uma experiência de tela cheia.</p>
+                            
+                <p><span style="font-size: 17px; text-decoration: underline;">Carregamento e Reprodução de Música de Fundo:</span></p>
+                <p>Um arquivo de música chamado "odissey.mp3" é carregado usando audio.loadStream() e reproduzido em loop infinito com audio.play().</p>
+                <p>O volume da música é definido como 0.3.</p>
+                            
+                <p><span style="font-size: 17px; text-decoration: underline;">Criação de Sprite de Personagem:</span></p>
+                <p>Um sprite de personagem é criado usando graphics.newImageSheet(). O arquivo de imagem "player4.png" contém uma série de quadros (frames) que representam as diferentes animações do personagem.</p>
+                <p>As animações são definidas em uma tabela chamada sprite1Animacao. Cada entrada na tabela define uma animação, incluindo o nome, quadro inicial, contagem de quadros, duração e se a animação deve ser repetida infinitamente (loopCount=0).</p>
+                            
+                <p><span style="font-size: 17px; text-decoration: underline;">Criação e Configuração do Personagem:</span></p> 
+                <p>Um objeto de personagem é criado usando display.newSprite() e vinculado ao sprite criado anteriormente (sprite1 e sprite1Animacao).</p>
+                <p>A posição inicial do personagem é definida.</p>
+                <p>O tamanho do personagem é ajustado usando xScale e yScale.</p>
+                <p>A sequência de animação inicial é definida como "parado", e a animação é iniciada usando player:play().</p>
+                            
+                <p><span style="font-size: 17px; text-decoration: underline;">Criação de Sprite para Botões:</span></p> 
+                <p>É criado um segundo sprite usando graphics.newImageSheet(). Este sprite contém uma série de quadros representando botões e ícones.</p>
+                <p>Diferentes partes do sprite são usadas para criar botões para mover o personagem para a esquerda e direita.</p>
+                            
+                <p><span style="font-size: 17px; text-decoration: underline;">Criação e Configuração dos Botões de Controle:</span></p> 
+                <p>Dois botões, "botaoEsquerda" e "botaoDireita", são criados usando display.newImageRect() e vinculados ao sprite de botões.</p>
+                <p>As posições iniciais dos botões são definidas.</p>
+                <p>Os eventos de toque são adicionados aos botões para controlar o movimento do personagem quando o jogador tocar ou arrastar os botões.</p>
+
+                <p><span style="font-size: 17px; text-decoration: underline;">Funções de Controle de Movimento:</span> </p>
+                <p>As funções moverEsquerda e moverDireita são definidas para manipular o movimento do personagem.</p>
+                <p>Quando o jogador toca no botão esquerdo, o personagem move-se para a esquerda e executa a animação "andando".</p>
+                <p>Quando o jogador toca no botão direito, o personagem move-se para a direita e executa a animação "andando".</p>
+
+                <p>Esse código cria uma cena de jogo básica com um plano de fundo, música de fundo, um personagem animado e controles de toque para mover o personagem para a esquerda e direita. É um bom ponto de partida para um jogo de plataforma 2D e pode ser expandido com mais recursos, níveis e desafios</p>
+
+                <h3 class="github"><a href="https://github.com/rodrigodagama/Projetos_CPDI-LUA/tree/main/spriteTest2" target="_blank">GitHub: Sprites</a></h3>
+            </p>
+        </div>
+
+    </div>
+
+    <h2 class="voltar"><a href="https://rodrigodagama.github.io/HTML-CSS-CPDI/Desafios/d012/">Voltar</a></h2>
+
+    <div class="lightbox" id="lightbox">
+        <img id="lightbox-image" src="" alt="Imagem Ampliada">
+        <span onclick="closeLightbox()" class="close">FECHAR</span>
+    </div>
+
+    <script>
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImage = document.getElementById("lightbox-image");
+            lightboxImage.src = imageSrc;
+            lightbox.style.display = "block";
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById("lightbox");
+            lightbox.style.display = "none";
+        }
+    </script>
+</body>
+</html>
