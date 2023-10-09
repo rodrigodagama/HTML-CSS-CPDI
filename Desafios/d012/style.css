@@ -15,7 +15,7 @@ body {
 
 .left-column {
     width: 400px; 
-    height: 1380px;
+    height: 1300px;
     margin-top: auto;
     background-image: url(imagens/background-projeto-final2.png);
     background-repeat: no-repeat;
@@ -27,7 +27,7 @@ body {
 
 .right-column {
     width: 650px; 
-    height: 1380px; 
+    height: 1300px; 
     margin-top: auto;
     background-image: url(imagens/background-projeto-final2.png);
     background-repeat: no-repeat;
