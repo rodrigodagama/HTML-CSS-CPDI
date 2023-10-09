@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio + Revisão de conteúdo</title>
+
+    <style>
+        body {
+            background-image: url(imagens/background114.png);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .titulo {
+            background-image: url(imagens/background-left-right.png);
+            padding: 20px;
+            border-radius: 20px;
+            margin: 0 auto;
+            max-width: 40%;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        #conteudo {
+            background-image: url(imagens/background-left-right.png);
+            background-repeat: no-repeat;
+            background-size: 280%;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 20px 20px;
+            max-width: 90%;
+            font-size: larger;
+            font-weight: bold;
+            font-family: "Arial", sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        .personagens {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;            
+        }
+
+        .personagem {
+            background-color: rgb(27, 172, 100, 0.6);
+            padding: 30px;
+            border-radius: 20px;
+            max-width: calc(16.66% - 20px);
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+            font-family: "Arial", sans-serif;
+            margin-bottom: 20px;
+            cursor: pointer;
+            border: 2px solid #ffffff;
+        }
+
+        .personagem img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ffffff;
+        }
+
+        .texto {
+            background-color: rgb(27, 172, 100, 0.6);
+            color: rgb(0, 0, 0);
+            padding: 30px;
+            margin: 10px;
+            border-radius: 20px;
+            max-width: calc(66.66% - 20px);
+            text-align:justify;
+            font-size: 16px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+            text-align: center;
+        }
+
+        .lightbox img {
+            max-height: 80%;
+            max-width: 80%;
+            margin: auto;
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+        }
+
+        .video {
+            background-color: rgba(27, 172, 100, 0.6);
+            padding: 20px;
+            border-radius: 20px;
+            max-width: 880px;
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+            font-family: "Arial", sans-serif;
+            margin-bottom: 20px;
+            cursor: pointer;
+            border: 2px solid #ffffff;
+        }
+
+        .close {
+            background-color: white;
+            padding: 10px;
+            border-radius: 20px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            color: red;
+            font-size: 24px;
+            font-weight: bold; 
+            position: center; 
+            cursor: pointer;
+            border: 2px solid #ffffff;
+        }
+
+        .voltar {
+            background-image: url(imagens/background-left-right.png);
+            padding: 20px;
+            border-radius: 20px;
+            margin: 0 auto;
+            max-width: 30%;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        .github {
+            background-image: url(imagens/background-left-right.png);
+            padding: 10px;
+            border-radius: 20px;
+            margin-left: 140px;
+            margin-top: 70px;
+            max-width: 70%;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        a:visited {
+        color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Desafio + Revisão de conteúdo</h1>
+    <div id="conteudo">
+        <div class="personagens">
+            <div class="personagem" onclick="openLightbox('imagens/desafio/1.JPG')">
+                <img src="imagens/desafio/1.JPG" alt="Imagem 1">
+            </div>
+            <div class="personagem" onclick="openLightbox('imagens/desafio/2.JPG')">
+                <img src="imagens/desafio/2.JPG" alt="Imagem 2">
+            </div>
+            <div class="personagem" onclick="openLightbox('imagens/desafio/3.JPG')">
+                <img src="imagens/desafio/3.JPG" alt="Imagem 3">
+            </div>
+            <div class="personagem" onclick="openLightbox('imagens/desafio/4.JPG')">
+                <img src="imagens/desafio/4.JPG" alt="Imagem 4">
+            </div>
+            <div class="personagem" onclick="openLightbox('imagens/desafio/5.JPG')">
+                <img src="imagens/desafio/5.JPG" alt="Imagem 5">
+            </div>
+            
+            
+        </div>
+        <div class="video">
+            <iframe width="860" height="615" src="video/desafio/desafioTres - Solar2D Simulator 2023-10-09 09-02-48.mp4?autoplay=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="texto">
+            <p>
+                <p><h2>Desafio + Revisão de conteúdo:</h2></p>
+        
+                <p>Implementação de um jogo inspirado em "Top Gear" em 2D, onde o jogador controla um carro (McQueen) e deve evitar colidir com carros inimigos (Hiks) enquanto coleta pontos.</p>
+                
+                <p><span style="font-size: 17px; text-decoration: underline;">Configuração da Física:</span></p>
+
+                <p>A biblioteca de física é chamada com require ("physics"), e o motor de física é iniciado com physics.start().</p>
+                <p>A gravidade é definida como (0, 0) com physics.setGravity(0, 0).</p> 
+                <p>O modo de renderização é definido como "normal" com physics.setDrawMode("normal"). Outros modos incluem "normal" e "debug" para depuração.</p>
+                           
+                <p><span style="font-size: 17px; text-decoration: underline;">Remoção da Barra de Notificações:</span></p> 
+                <p>A barra de status do dispositivo é ocultada para criar uma experiência de tela cheia.</p>
+                            
+                <p><span style="font-size: 17px; text-decoration: underline;">Criação de Grupos de Exibição:</span></p>
+                <p>Três grupos são criados: grupoBg para elementos de fundo, grupoMain para elementos principais do jogo e grupoUI para a interface do usuário.</p>
+                            
+                <p><span style="font-size: 17px; text-decoration: underline;">Variáveis de Pontuação e Vidas:</span></p>
+                <p>Duas variáveis, pontos e vidas, são inicializadas para rastrear a pontuação do jogador e suas vidas restantes.</p>
+                            
+                <p><span style="font-size: 17px; text-decoration: underline;">Background:</span></p> 
+                <p>Um plano de fundo é criado com uma imagem ("bg2.png") no grupo grupoBg, e sua posição é centralizada.</p>
+                            
+                <p><span style="font-size: 17px; text-decoration: underline;">Música de Fundo:</span></p> 
+                <p>Uma música de fundo ("topgear.mp3") é carregada e reproduzida em loop infinito com um volume ajustado.</p>
+                            
+                <p><span style="font-size: 17px; text-decoration: underline;">Paredes Invisíveis:</span></p> 
+                <p>Uma parede invisível é criada à esquerda da tela para evitar que o carro do jogador saia da área de jogo.</p>
+
+                <p><span style="font-size: 17px; text-decoration: underline;">Placar:</span> </p>
+                <p>Dois objetos de texto são criados no grupoUI para exibir os pontos e as vidas do jogador.</p>
+
+                <p><span style="font-size: 17px; text-decoration: underline;">Carro do Jogador (McQueen):</span> </p>
+                <p>Uma imagem do carro do jogador é criada no grupoMain</p>
+                <p>O carro é configurado como um corpo físico "kinematic" para controle direto do jogador.</p>
+
+                <p><span style="font-size: 17px; text-decoration: underline;">Botões de Controle:</span> </p>
+                <p>Dois botões (cima e baixo) são criados para permitir que o jogador mova o carro para cima e para baixo.</p>
+                <p>Funções de movimentação (cima() e baixo()) são definidas para responder ao toque nesses botões.</p>
+
+                <p><span style="font-size: 17px; text-decoration: underline;">Carro Inimigo (Hiks):</span> </p>
+                <p>Uma função inimigoAtirar() é definida para criar tiros do inimigo.</p>
+                <p>A função cria um tiro, configura sua trajetória e remove-o após um período de tempo.</p>
+
+                <p><span style="font-size: 17px; text-decoration: underline;">Movimentação do Inimigo:</span></p>
+                <p>Um carro inimigo é criado e seu movimento é controlado por transições.</p>
+                <p>O carro inimigo é configurado como um corpo físico "dynamic" com detecção de colisão como sensor.</p>
+
+                <p><span style="font-size: 17px; text-decoration: underline;">Função de Colisão:</span></p>
+                <p>A função onCollision() trata colisões entre o carro do jogador, o carro inimigo e as paredes.</p>
+                <p>Quando há colisões, as vidas do jogador diminuem e os pontos aumentam.</p>
+
+                <p><span style="font-size: 17px; text-decoration: underline;">Listeners de Colisão:</span></p>
+                <p>Os ouvintes de colisão são ativados para detectar colisões durante o jogo.</p>
+
+                <p><span style="font-size: 17px; text-decoration: underline;">Criação e Movimento do Carro Inimigo:</span></p>
+                <p>As funções criarCarro2() e moverCarro2() são definidas para criar e controlar o movimento do carro inimigo.</p>
+                <p>Um temporizador (meuTimer) é usado para mover o carro inimigo periodicamente.</p>
+
+                <p><span style="font-size: 17px; text-decoration: underline;">Final do Jogo:</span></p>
+                <p>Quando as vidas do jogador se esgotam, o jogo é encerrado e uma imagem de "game over" é exibida no centro da tela.</p>
+
+                <p>Este código cria um jogo simples baseado em toque onde o jogador controla o carro do jogador para evitar colidir com carros inimigos e coletar pontos.</p>
+
+                <h3 class="github"><a href="https://github.com/rodrigodagama/Projetos_CPDI-LUA/tree/main/revisao" target="_blank">GitHub: Revisão de conteúdo</a></h3>
+            </p>
+        </div>
+
+    </div>
+
+    <h2 class="voltar"><a href="https://rodrigodagama.github.io/HTML-CSS-CPDI/Desafios/d012/">Voltar</a></h2>
+
+    <div class="lightbox" id="lightbox">
+        <img id="lightbox-image" src="" alt="Imagem Ampliada">
+        <span onclick="closeLightbox()" class="close">FECHAR</span>
+    </div>
+
+    <script>
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImage = document.getElementById("lightbox-image");
+            lightboxImage.src = imageSrc;
+            lightbox.style.display = "block";
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById("lightbox");
+            lightbox.style.display = "none";
+        }
+    </script>
+</body>
+</html>
