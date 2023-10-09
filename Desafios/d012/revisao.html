@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Revisão</title>
+
+    <style>
+        body {
+            background-image: url(imagens/background114.png);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .titulo {
+            background-image: url(imagens/background-left-right.png);
+            padding: 20px;
+            border-radius: 20px;
+            margin: 0 auto;
+            max-width: 40%;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        #conteudo {
+            background-image: url(imagens/background-left-right.png);
+            background-repeat: no-repeat;
+            background-size: 280%;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 20px 20px;
+            max-width: 90%;
+            font-size: larger;
+            font-weight: bold;
+            font-family: "Arial", sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        .personagens {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;            
+        }
+
+        .personagem {
+            background-color: rgb(27, 172, 100, 0.6);
+            padding: 30px;
+            border-radius: 20px;
+            max-width: calc(16.66% - 20px);
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+            font-family: "Arial", sans-serif;
+            margin-bottom: 20px;
+            cursor: pointer;
+            border: 2px solid #ffffff;
+        }
+
+        .personagem img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ffffff;
+        }
+
+        .texto {
+            background-color: rgb(27, 172, 100, 0.6);
+            color: rgb(0, 0, 0);
+            padding: 30px;
+            margin: 10px;
+            border-radius: 20px;
+            max-width: calc(66.66% - 20px);
+            text-align:justify;
+            font-size: 16px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+            text-align: center;
+        }
+
+        .lightbox img {
+            max-height: 80%;
+            max-width: 80%;
+            margin: auto;
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+        }
+
+        .video {
+            background-color: rgba(27, 172, 100, 0.6);
+            padding: 20px;
+            border-radius: 20px;
+            max-width: 880px;
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+            font-family: "Arial", sans-serif;
+            margin-bottom: 20px;
+            cursor: pointer;
+            border: 2px solid #ffffff;
+        }
+
+        .close {
+            background-color: white;
+            padding: 10px;
+            border-radius: 20px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            color: red;
+            font-size: 24px;
+            font-weight: bold; 
+            position: center; 
+            cursor: pointer;
+            border: 2px solid #ffffff;
+        }
+
+        .voltar {
+            background-image: url(imagens/background-left-right.png);
+            padding: 20px;
+            border-radius: 20px;
+            margin: 0 auto;
+            max-width: 30%;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        .github {
+            background-image: url(imagens/background-left-right.png);
+            padding: 10px;
+            border-radius: 20px;
+            margin-left: 140px;
+            margin-top: 70px;
+            max-width: 70%;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        a:visited {
+        color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Aula de Revisão</h1>
+    <div id="conteudo">
+        <div class="personagens">
+            <div class="personagem" onclick="openLightbox('imagens/revisao/1.JPG')">
+                <img src="imagens/revisao/1.JPG" alt="Imagem 1">
+            </div>
+            <div class="personagem" onclick="openLightbox('imagens/revisao/2.JPG')">
+                <img src="imagens/revisao/2.JPG" alt="Imagem 2">
+            </div>
+            <div class="personagem" onclick="openLightbox('imagens/revisao/3.JPG')">
+                <img src="imagens/revisao/3.JPG" alt="Imagem 3">
+            </div>
+            <div class="personagem" onclick="openLightbox('imagens/revisao/4.JPG')">
+                <img src="imagens/revisao/4.JPG" alt="Imagem 4">
+            </div>
+            
+        </div>
+        <div class="video">
+            <iframe width="860" height="615" src="video/revisao/revisao - Solar2D Simulator 2023-10-09 08-09-44.mp4?autoplay=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="texto">
+            <p>
+                <p><h2>Aula de revisão de conteúdo:</h2></p>
+        
+                <p>Exercícios e desafios feitos para a aula de Revisão de conteúdo em LUA que é parte de um jogo de plataforma 2D que envolve 2 personagens, um botão de atirar e 2 botões, um para baixo e outro para cima.</p>
+                
+                <p><span style="font-size: 17px; text-decoration: underline;">Configuração da Física:</span></p>
+
+                <p>A biblioteca de física é chamada com require ("physics"), e o motor de física é iniciado com physics.start().</p>
+                <p>A gravidade é definida como (0, 0) com physics.setGravity(0, 0).</p> 
+                <p>O modo de renderização é definido como "normal" com physics.setDrawMode("normal"). Outros modos incluem "hybrid" e "debug" para depuração.</p>
+                           
+                <p><span style="font-size: 17px; text-decoration: underline;">Remoção da Barra de Notificações:</span></p> 
+                <p>A barra de notificações do dispositivo é ocultada com display.setStatusBar(display.HiddenStatusBar) para proporcionar uma experiência de tela cheia.</p>
+                            
+                <p><span style="font-size: 17px; text-decoration: underline;">Carregamento e Reprodução de Música de Fundo:</span></p>
+                <p>Um arquivo de música chamado "bg.mp3" é carregado com audio.loadStream("Audio/bg.mp3").</p>
+                <p>A música de fundo é reproduzida em loop infinito com audio.play(bgAudio, {channel=1, loops=-1}).</p>
+                            
+                <p><span style="font-size: 17px; text-decoration: underline;">Criação de Grupos de Exibição:</span></p>
+                <p>Três grupos de exibição são criados para organizar elementos na tela: grupoBg, grupoMain e grupoUI.</p>
+                            
+                <p><span style="font-size: 17px; text-decoration: underline;">Variáveis de Pontos e Vidas:</span></p> 
+                <p>Duas variáveis, pontos e vidas, são criadas e inicializadas com valores iniciais de 0 e 5, respectivamente.</p>
+                            
+                <p><span style="font-size: 17px; text-decoration: underline;">Adição do Plano de Fundo:</span></p> 
+                <p>Um plano de fundo de imagem ("bg.jpg") é adicionado ao grupo grupoBg com display.newImageRect().</p>
+                <p>A posição do plano de fundo é definida no centro da tela.</p>
+                            
+                <p><span style="font-size: 17px; text-decoration: underline;">Adição do Personagem Principal:</span></p> 
+                <p>Uma imagem do personagem principal é adicionada ao grupo grupoMain com display.newImageRect().</p>
+                <p>A posição do personagem é definida.</p>
+                <p>Um nome personalizado é atribuído ao personagem com myName.</p>
+                <p>Um corpo físico "kinematic" é adicionado ao personagem com physics.addBody(), indicando que ele não é afetado pela gravidade e não colide com outros objetos estáticos.</p>
+
+                <p><span style="font-size: 17px; text-decoration: underline;">Criação de Botões de Controle:</span> </p>
+                <p>Dois botões de controle (cima e baixo) são criados com display.newImageRect() e adicionados ao grupoMain.</p>
+                <p>As posições e rotações dos botões são configuradas.</p>
+                <p>Funções de movimentação (cima() e baixo()) são definidas para responder ao toque nesses botões.</p>
+
+                <p><span style="font-size: 17px; text-decoration: underline;">Adição de um Botão de Tiro:</span> </p>
+                <p>Um botão de tiro é criado e adicionado ao grupoMain.</p>
+                <p>Uma função de atirar (atirar()) é definida para criar projéteis quando o botão de tiro é tocado.</p>
+
+                <p><span style="font-size: 17px; text-decoration: underline;">Adição de um Inimigo:</span> </p>
+                <p>Uma imagem de um inimigo é adicionada ao grupoMain.</p>
+                <p>A posição do inimigo é definida.</p>
+                <p>Um nome personalizado é atribuído ao inimigo.</p>
+                <p>Um corpo físico "kinematic" é adicionado ao inimigo.</p>
+                <p>A direção do inimigo é inicializada como "cima".</p>
+
+                <p><span style="font-size: 17px; text-decoration: underline;">Função de Ataque do Inimigo:</span> </p>
+                <p>Uma função inimigoAtirar() é definida para criar tiros do inimigo.</p>
+                <p>A função cria um tiro, configura sua trajetória e remove-o após um período de tempo.</p>
+
+                <p><span style="font-size: 17px; text-decoration: underline;">Movimentação do Inimigo:</span></p>
+                <p>Uma função movimentarInimigo() é definida para fazer o inimigo se mover para cima e para baixo na tela.</p>
+                <p>O inimigo muda de direção quando atinge limites predefinidos na tela.</p>
+                <p>Um ouvinte de evento enterFrame é adicionado para chamar continuamente a função de movimentação.</p>
+
+                <p><span style="font-size: 17px; text-decoration: underline;">Função de Colisão:</span></p>
+                <p>Uma função onCollision() é definida para tratar colisões entre objetos.</p>
+                <p>A função trata colisões entre projéteis do jogador e o inimigo, diminuindo as vidas e atualizando os pontos.</p>
+                <p>Colisões entre projéteis do inimigo e o jogador também são tratadas, removendo vidas do jogador.</p>
+
+                <p>Este código forma a base de um jogo de ação simples, onde o jogador pode controlar um personagem, atirar em inimigos e acumular pontos. </p>
+
+                <h3 class="github"><a href="https://github.com/rodrigodagama/Projetos_CPDI-LUA/tree/main/projetoFinal02" target="_blank">GitHub: Jogo Recycle Master (Projeto Final LUA)</a></h3>
+            </p>
+        </div>
+
+    </div>
+
+    <h2 class="voltar"><a href="https://rodrigodagama.github.io/HTML-CSS-CPDI/Desafios/d012/">Voltar</a></h2>
+
+    <div class="lightbox" id="lightbox">
+        <img id="lightbox-image" src="" alt="Imagem Ampliada">
+        <span onclick="closeLightbox()" class="close">FECHAR</span>
+    </div>
+
+    <script>
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImage = document.getElementById("lightbox-image");
+            lightboxImage.src = imageSrc;
+            lightbox.style.display = "block";
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById("lightbox");
+            lightbox.style.display = "none";
+        }
+    </script>
+</body>
+</html>
