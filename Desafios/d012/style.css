@@ -98,22 +98,27 @@ p {
 .tabela {
     background-image: url(imagens/background-left-right.png);
     background-color: antiquewhite;
-    border-radius: 30px;
+    border-radius: 50px;
     border: 4px solid #ffffff;
-    padding: 50px;
-    margin-left: 80px;
-    margin-top: 60px;
-    margin-bottom: 30px;
+    /* Mantenha a largura da tabela igual à versão desktop */
+    width: 80%; /* Aumente a largura para preencher a tela */
+    /* Remova o preenchimento e o espaço entre as células */
+    padding: 0;
+    margin: 0 auto;
+    /* Adicione a rolagem horizontal para a tabela */
+    overflow-x: auto;
 }
 
 .tabela-titulo {
     text-align: center;
-    padding-right: 60px;
+    padding-right: 10px;
 }
 
 
 table td {
-    padding-left: 10px;
+    /* Alinhe o texto das células ao centro */
+    text-align: center;
+    padding: 10px; /* Adicione algum preenchimento para as células */
 }
 
 
