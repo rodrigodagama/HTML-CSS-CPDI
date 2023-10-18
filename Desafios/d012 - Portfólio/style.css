@@ -109,3 +109,20 @@ a:visited {
     color: rgb(0, 0, 0);
 }
 
+@media (max-width: 768px) {
+    .portfolio {
+        flex-direction: column; /* Altera a direção do flex container para empilhar os elementos verticalmente */
+    }
+
+    .left-column, .right-column {
+        width: 100%; /* Ocupa a largura total da tela */
+        margin: 10px 0; /* Adiciona margem na parte superior e inferior */
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
