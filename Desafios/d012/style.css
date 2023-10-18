@@ -163,6 +163,13 @@ a:visited {
 
 
 @media (max-width: 768px) {
+    .button {
+        font-size: 12px; /* Reduza o tamanho da fonte */
+        padding: 3px 6px; /* Reduza o preenchimento dos botões */
+        margin: 5px; /* Adicione um espaçamento entre os botões */
+        width: auto; /* Remova a largura máxima dos botões */
+    }
+    
     .left-column, .right-column {
         width: 100%;
         box-sizing: border-box;
@@ -170,14 +177,13 @@ a:visited {
         padding: 10px;
         border: 3px solid white;
         text-align: center;
-        margin: 10px 0; /* Ajuste a margem conforme necessário */
+        margin: 10px 0;
     }
 
     .tabela {
-        margin-right: 10%;
+        margin: 0 auto; /* Centralize a tabela */
+        padding: 20px; /* Aumente o espaço interno da tabela */
     }
-
-    
 
     .left-column video {
         max-width: 100%;
@@ -189,7 +195,7 @@ a:visited {
 
     img {
         max-width: 100%;
-        height: auto;  
+        height: auto;
     }
 }
 
