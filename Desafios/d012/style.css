@@ -110,15 +110,11 @@ a:visited {
 @media (max-width: 768px) {
     .portfolio {
         flex-direction: column;
-        align-items: center;
     }
 
     .left-column, .right-column {
-        width: 100%; /* Ocupar a largura completa da tela */
-    }
-
-    .left-column, .right-column {
-        align-items: center; /* Alinhar ao centro em dispositivos móveis */
+        width: 100%; 
+        margin: 10px 0; 
     }
 }
 
