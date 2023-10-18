@@ -115,10 +115,10 @@ a:visited {
 }
 
 .left-column video {
-    max-width: 100%; /* Garanta que o vídeo não seja maior do que a coluna */
-    height: auto; /* Mantenha a proporção de aspecto do vídeo */
-    display: block; /* Certifique-se de que o vídeo seja exibido como um bloco, não inline */
-    margin: 0 auto; /* Centralize o vídeo horizontalmente na coluna */
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
     border: 2px solid white;
 }
 
@@ -126,20 +126,22 @@ a:visited {
 @media (max-width: 768px) {
     .left-column, .right-column {
         width: 100%;
-        height: auto; /* Em vez de uma altura fixa, use "auto" */
+        height: auto; 
         box-sizing: border-box;
         background-color: transparent;
         padding: 10px;
         border: 3px solid white;
         text-align: center;
     }
-}
 
+    .left-column video {
+        max-width: 100%; /* Garanta que o vídeo não seja maior do que a coluna */
+    }
 
-
-img {
-    max-width: 100%;
-    height: auto;  
+    img {
+        max-width: 100%;
+        height: auto;  
+    }
 }
 
 
