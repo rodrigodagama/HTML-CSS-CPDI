@@ -134,6 +134,10 @@ a:visited {
         margin: 20px 0; /* Ajuste a margem conforme necessário */
     }
 
+    .tabela {
+        padding: 50px;
+    }
+
     .left-column video {
         max-width: 100%;
         height: auto;
