@@ -113,6 +113,7 @@ a:visited {
 @media (max-width: 768px) {
     .left-column, .right-column {
         width: 100%; /* Ambas as colunas ocupam 100% da largura da tela no celular */
+        height: 310vh;
         box-sizing: border-box; /* Evita problemas de largura */
         background-color: transparent; /* Defina o fundo como transparente no celular */
         padding: 10px;
