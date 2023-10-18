@@ -111,12 +111,12 @@ a:visited {
 
 @media (max-width: 768px) {
     .portfolio {
-        flex-direction: column; /* Altera a direção do flex container para empilhar os elementos verticalmente */
+        flex-direction: column;
     }
 
     .left-column, .right-column {
-        width: 100%; /* Ocupa a largura total da tela */
-        margin: 10px 0; /* Adiciona margem na parte superior e inferior */
+        width: 100%; 
+        margin: 10px 0; 
     }
 }
 
