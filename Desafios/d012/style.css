@@ -16,7 +16,7 @@ body {
 
 .left-column {
     width: 30%; /* A coluna esquerda ocupa 30% da largura da tela */
-    height: 204.7vh;
+    height: 222vh;
     box-sizing: border-box; /* Evita problemas de largura */
     background-image: url(imagens/background-projeto-final2.png);
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@ body {
 .right-column {
     width: 50%; /* A coluna direita ocupa 40% da largura da tela */
     box-sizing: border-box; /* Evita problemas de largura */
-    height: 204.7vh;
+    height: 222vh;
     background-image: url(imagens/background-projeto-final2.png);
     background-repeat: no-repeat;
     color: black;
@@ -110,10 +110,16 @@ a:visited {
     color: rgb(0, 0, 0);
 }
 
+.left-column video {
+    margin-left: 5px;
+    border: 2px solid white;
+    
+}
+
 @media (max-width: 768px) {
     .left-column, .right-column {
         width: 100%; /* Ambas as colunas ocupam 100% da largura da tela no celular */
-        height: 310vh;
+        height: 210vh;
         box-sizing: border-box; /* Evita problemas de largura */
         background-color: transparent; /* Defina o fundo como transparente no celular */
         padding: 10px;
