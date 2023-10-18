@@ -126,16 +126,20 @@ a:visited {
 @media (max-width: 768px) {
     .left-column, .right-column {
         width: 100%;
-        height: auto; 
         box-sizing: border-box;
         background-color: transparent;
         padding: 10px;
         border: 3px solid white;
         text-align: center;
+        margin: 20px 0; /* Ajuste a margem conforme necessário */
     }
 
     .left-column video {
-        max-width: 100%; /* Garanta que o vídeo não seja maior do que a coluna */
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border: 2px solid white;
     }
 
     img {
