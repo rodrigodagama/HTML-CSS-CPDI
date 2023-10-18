@@ -170,12 +170,14 @@ a:visited {
         padding: 10px;
         border: 3px solid white;
         text-align: center;
-        margin: 20px 0; /* Ajuste a margem conforme necessário */
+        margin: 10px 0; /* Ajuste a margem conforme necessário */
     }
 
     .tabela {
-        margin: auto;
+        margin-right: 10%;
     }
+
+    
 
     .left-column video {
         max-width: 100%;
