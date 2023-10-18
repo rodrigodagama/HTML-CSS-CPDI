@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+:root {
+    --bgColor: #1a1e1f;
+    --bgGray: #262626;
+    --softGray: #a8a8a8;
+    --gold: #845e49;
+}
+
 body {
     background-image: url(imagens/background114.png); 
     background-attachment: fixed;
@@ -120,6 +127,40 @@ a:visited {
     display: block; 
     margin: 0 auto; 
     border: 2px solid white;
+}
+
+.button {
+    background-color: var(--bgColor);
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    margin-left: 320px;
+    margin-top: 50px;
+    max-width: 70%;
+    text-align: center;
+    font-size: 22px;
+    color: var(--gold);
+    cursor: pointer;
+    outline: none;
+    border: 2px solid var(--bgColor);
+}
+
+.button:visited {
+    background-color: var(--gold);
+    color: var(--gold);
+    border: 1px solid rgba(0, 0, 139, 0.336);
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 139, 0.336);
+    color: rgba(255, 255, 255, 0.336);
+}
+
+.button::after {
+    content: '';
+    margin-top: 1em;
+    width: 2em;
+    height: 0.1em;
+    background-color: var(--softGray);
 }
 
 
