@@ -16,7 +16,7 @@ body {
 
 .left-column {
     width: 30%; /* A coluna esquerda ocupa 30% da largura da tela */
-    height: 225vh;
+    height: auto;
     box-sizing: border-box;
     background-image: url(imagens/background-projeto-final2.png);
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@ body {
 .right-column {
     width: 50%; /* A coluna direita ocupa 40% da largura da tela */
     box-sizing: border-box;
-    height: 225vh;
+    height: auto;
     background-image: url(imagens/background-projeto-final2.png);
     background-repeat: no-repeat;
     color: black;
