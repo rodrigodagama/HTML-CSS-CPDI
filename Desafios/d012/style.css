@@ -112,27 +112,31 @@ a:visited {
 }
 
 .left-column video {
-    margin-left: 5px;
+    max-width: 100%; /* Garanta que o vídeo não seja maior do que a coluna */
+    height: auto; /* Mantenha a proporção de aspecto do vídeo */
+    display: block; /* Certifique-se de que o vídeo seja exibido como um bloco, não inline */
+    margin: 0 auto; /* Centralize o vídeo horizontalmente na coluna */
     border: 2px solid white;
-    
 }
+
 
 @media (max-width: 768px) {
     .left-column, .right-column {
-        width: 100%; /* Ambas as colunas ocupam 100% da largura da tela no celular */
-        height: 210vh;
-        box-sizing: border-box; /* Evita problemas de largura */
-        background-color: transparent; /* Defina o fundo como transparente no celular */
+        width: 100%;
+        height: auto; /* Em vez de uma altura fixa, use "auto" */
+        box-sizing: border-box;
+        background-color: transparent;
         padding: 10px;
         border: 3px solid white;
         text-align: center;
     }
 }
 
+
+
 img {
     max-width: 100%;
-    height: auto;
-    
+    height: auto;  
 }
 
 
