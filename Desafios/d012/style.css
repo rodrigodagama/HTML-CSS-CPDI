@@ -113,7 +113,7 @@ a:visited {
         width: 100%; /* Ambas as colunas ocupam 100% da largura da tela no celular */
         box-sizing: border-box; /* Evita problemas de largura */
         background-color: transparent; /* Defina o fundo como transparente no celular */
-        padding: 40px;
+        padding: 10px;
         border: 3px solid white;
         text-align: center;
     }
