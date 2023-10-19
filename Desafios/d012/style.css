@@ -176,11 +176,15 @@ a:visited {
         align-items: center; /* Centraliza os itens verticalmente */
     }
 
-    .left-column,
     .right-column {
-        width: 50%; /* Ocupa 90% da largura da tela */
+        width: 200vh; /* Ocupa 90% da largura da tela */
         margin: auto; /* Centraliza horizontalmente */
         
+    }
+
+    .left-column {
+        width: 50%; /* Ocupa 90% da largura da tela */
+        margin: auto; /* Centraliza horizontalmente */
     }
 
     .tabela {
@@ -194,11 +198,15 @@ a:visited {
         align-items: center; /* Centraliza os itens verticalmente */
     }
 
-    .left-column,
     .right-column {
-        width: 50%; /* Ocupa 90% da largura da tela */
+        width: 200vh; /* Ocupa 90% da largura da tela */
         margin: auto; /* Centraliza horizontalmente */
         
+    }
+
+    .left-column {
+        width: 50%; /* Ocupa 90% da largura da tela */
+        margin: auto; /* Centraliza horizontalmente */
     }
 
     .tabela {
@@ -212,11 +220,15 @@ a:visited {
         align-items: center; /* Centraliza os itens verticalmente */
     }
 
-    .left-column,
     .right-column {
-        width: 50%; /* Ocupa 90% da largura da tela */
+        width: 200vh; /* Ocupa 90% da largura da tela */
         margin: auto; /* Centraliza horizontalmente */
         
+    }
+
+    .left-column {
+        width: 50%; /* Ocupa 90% da largura da tela */
+        margin: auto; /* Centraliza horizontalmente */
     }
 
     .tabela {
