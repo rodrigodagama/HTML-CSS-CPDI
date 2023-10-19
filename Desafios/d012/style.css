@@ -34,7 +34,7 @@ body {
 }
 
 .right-column {
-    width: 50%; /* A coluna direita ocupa 40% da largura da tela */
+    width: 100vh; /* A coluna direita ocupa 40% da largura da tela */
     box-sizing: border-box;
     height: auto;
     background-image: url(imagens/background-projeto-final2.png);
