@@ -173,16 +173,53 @@ a:visited {
 @media screen and (max-width: 768px) {
     .portfolio {
         flex-direction: row; /* Altera a direção da flexbox para empilhar verticalmente */
-        align-items: auto; /* Centraliza os itens verticalmente */
+        align-items: center; /* Centraliza os itens verticalmente */
     }
 
     .left-column,
     .right-column {
-        width: 50%; /* Ocupa a largura total da tela */
-        height: 430%;
-        align-items: auto;
+        width: 50%; /* Ocupa 90% da largura da tela */
+        margin: auto; /* Centraliza horizontalmente */
+        
     }
 
     .tabela {
-        width: 10%;
+        width: 80%;
     }
+}
+
+@media screen and (max-width: 668px) {
+    .portfolio {
+        flex-direction: row; /* Altera a direção da flexbox para empilhar verticalmente */
+        align-items: center; /* Centraliza os itens verticalmente */
+    }
+
+    .left-column,
+    .right-column {
+        width: 50%; /* Ocupa 90% da largura da tela */
+        margin: auto; /* Centraliza horizontalmente */
+        
+    }
+
+    .tabela {
+        width: 100%; /* Ocupa a largura total da tela */
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .portfolio {
+        flex-direction: row; /* Altera a direção da flexbox para empilhar verticalmente */
+        align-items: center; /* Centraliza os itens verticalmente */
+    }
+
+    .left-column,
+    .right-column {
+        width: 50%; /* Ocupa 90% da largura da tela */
+        margin: auto; /* Centraliza horizontalmente */
+        
+    }
+
+    .tabela {
+        width: 100%; /* Ocupa a largura total da tela */
+    }
+}
