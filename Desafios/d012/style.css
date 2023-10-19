@@ -170,47 +170,19 @@ a:visited {
 }
 
 
-@media (max-width: 768px) {
-    .button {
-        font-size: 12px; /* Reduza o tamanho da fonte */
-        padding: 3px 6px; /* Reduza o preenchimento dos botões */
-        margin: 5px; /* Adicione um espaçamento entre os botões */
-        width: auto; /* Remova a largura máxima dos botões */
-    }
-    
-    .right-column {
-        width: 100%;
-        box-sizing: border-box;
-        background-color: transparent;
-        padding: 10px;
-        border: 3px solid white;
-        text-align: center;
-        margin: 10px 0;
+@media screen and (max-width: 768px) {
+    .portfolio {
+        flex-direction: row; /* Altera a direção da flexbox para empilhar verticalmente */
+        align-items: auto; /* Centraliza os itens verticalmente */
     }
 
-    .left-column {
-        width: 350px;
-        height: 1770px;
+    .left-column,
+    .right-column {
+        width: 50%; /* Ocupa a largura total da tela */
+        height: 430%;
+        align-items: auto;
     }
 
     .tabela {
-        margin: 0 auto; /* Centralize a tabela */
-        padding: 20px; /* Aumente o espaço interno da tabela */
+        width: 10%;
     }
-
-    .left-column video {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        border: 2px solid white;
-        margin-bottom: 40px;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-
