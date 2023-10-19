@@ -177,7 +177,7 @@ a:visited {
     }
 
     .right-column {
-        width: 200vh; /* Ocupa 90% da largura da tela */
+        width: 200%; /* Ocupa 90% da largura da tela */
         margin: auto; /* Centraliza horizontalmente */
         
     }
