@@ -23,8 +23,7 @@ body {
 
 .left-column {
     width: 30%; /* A coluna esquerda ocupa 30% da largura da tela */
-    height: auto;
-    box-sizing: border-box;
+    height: max-content;
     background-image: url(imagens/background-projeto-final2.png);
     background-repeat: no-repeat;
     color: black;
@@ -34,9 +33,8 @@ body {
 }
 
 .right-column {
-    width: 100vh; /* A coluna direita ocupa 40% da largura da tela */
+    width: 80vh; /* A coluna direita ocupa 40% da largura da tela */
     box-sizing: border-box;
-    height: auto;
     background-image: url(imagens/background-projeto-final2.png);
     background-repeat: no-repeat;
     color: black;
@@ -169,4 +167,9 @@ a:visited {
     background-color: var(--softGray);
 }
 
+@media (max-width: 780px) {
+    body {
+        min-width: 780px;
+    }
+}
 
