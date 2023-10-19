@@ -172,7 +172,7 @@ a:visited {
     }
     
     .left-column, .right-column {
-        width: 100%;
+        width: 120%;
         box-sizing: border-box;
         background-color: transparent;
         padding: 10px;
