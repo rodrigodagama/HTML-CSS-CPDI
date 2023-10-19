@@ -104,11 +104,18 @@ p {
     padding: 0;
     margin: 0 auto;
     overflow-x: auto;
+    margin-bottom: 70px;
+    margin-top: 70px;
 }
 
 .tabela-titulo {
     text-align: center;
     padding-right: 10px;
+}
+
+.tabela-titulo2 {
+    text-align: center;
+    padding-left: 80px;
 }
 
 
