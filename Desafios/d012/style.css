@@ -173,7 +173,7 @@ a:visited {
 
     .left-column, .right-column {
         height: auto;
-        width: 100%;
+        width: auto;
     }
 
     .left-column {
