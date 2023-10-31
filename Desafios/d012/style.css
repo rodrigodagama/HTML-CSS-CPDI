@@ -169,5 +169,12 @@ a:visited {
     body {
         min-width: 780px;
     }
+
+    .left-column, .right-column {
+        flex: 1; 
+        height: 200vh;
+    }
+
+    
 }
 
