@@ -172,9 +172,8 @@ a:visited {
 
     .left-column, .right-column {
         flex: 1; 
-        height: 170vh;
-    }
-
+        height: 150vh;
     
+    }  
 }
 
