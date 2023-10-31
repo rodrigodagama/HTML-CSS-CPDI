@@ -17,27 +17,27 @@ body {
 .portfolio {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Alinhe as colunas no início da tela */
+    align-items: flex-start; 
     height: 100vh;
 }
 
 .left-column, .right-column {
-    flex: 1; /* Ambas as colunas terão o mesmo tamanho */
-    height: 230vh; /* A altura das colunas será 100% da altura da tela */
+    flex: 1; 
+    height: 230vh; 
     background-image: url(imagens/background-projeto-final2.png);
     background-repeat: no-repeat;
     color: black;
-    background-size: cover; /* A imagem de fundo cobrirá toda a coluna */
+    background-size: cover; 
     padding: 10px;
     border: 3px solid white;
 }
 
 .left-column {
-    flex: 0.3; /* A coluna esquerda ocupará 30% da largura da tela */
+    flex: 0.3; 
 }
 
 .right-column {
-    flex: 0.5; /* A coluna direita ocupará 70% da largura da tela */
+    flex: 0.5;
 }
 
 
@@ -166,8 +166,22 @@ a:visited {
 }
 
 @media (max-width: 780px) {
-    body {
-        min-width: 780px;
+    .portfolio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-column, .right-column {
+        height: auto;
+        width: 100%;
+    }
+
+    .left-column {
+        order: 2;
+    }
+
+    .right-column {
+        order: 1;
     }
 }
 
