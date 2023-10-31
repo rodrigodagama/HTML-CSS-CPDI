@@ -21,27 +21,25 @@ body {
     height: 100vh;
 }
 
-.left-column {
-    width: 30%; /* A coluna esquerda ocupa 30% da largura da tela */
-    height: max-content;
+.left-column, .right-column {
+    flex: 1; /* Ambas as colunas terão o mesmo tamanho */
+    height: 230vh; /* A altura das colunas será 100% da altura da tela */
     background-image: url(imagens/background-projeto-final2.png);
     background-repeat: no-repeat;
     color: black;
-    background-size: 100% 100%;
+    background-size: cover; /* A imagem de fundo cobrirá toda a coluna */
     padding: 10px;
     border: 3px solid white;
 }
 
-.right-column {
-    width: 80vh; /* A coluna direita ocupa 40% da largura da tela */
-    box-sizing: border-box;
-    background-image: url(imagens/background-projeto-final2.png);
-    background-repeat: no-repeat;
-    color: black;
-    background-size: 100% 100%;
-    padding: 10px;
-    border: 3px solid white;
+.left-column {
+    flex: 0.3; /* A coluna esquerda ocupará 30% da largura da tela */
 }
+
+.right-column {
+    flex: 0.5; /* A coluna direita ocupará 70% da largura da tela */
+}
+
 
 
 .left-column img {
