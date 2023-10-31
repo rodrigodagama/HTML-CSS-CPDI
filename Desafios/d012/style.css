@@ -173,7 +173,14 @@ a:visited {
     .left-column, .right-column {
         flex: 1; 
         height: 150vh;
-    
     }  
+    
+    .left-column {
+        margin-left: 20px;
+    }
+
+    .right-column {
+        margin-right: 20px;
+    }
 }
 
